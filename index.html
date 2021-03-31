@@ -1,0 +1,51 @@
+<html> <head> <title>Family Book</title> </head>
+<body><h1>Family Book</h1>
+<img id="album" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrCpHmX32-662MjTk-0xiqIMJwftWoNSATOc5skgesF5dJJsik">
+<h2 id="name">The Family Book</h2> 
+  <div> <button onclick="nextslide()">Next</button>
+
+    <script>
+    var images = [
+        "https://webstockreview.net/images/clipart-child-wave-goodbye-5.png",
+        "https://www.pinclipart.com/picdir/middle/386-3862178_using-vidigami-woman-clipart-transparent-background-png-download.png",
+         "https://www.pinclipart.com/picdir/middle/563-5631573_transparent-boy-and-girl-clipart-boy-clipart-no.png",
+        "https://classroomclipart.com/images/gallery/Clipart/Occupation/sales-woman-clipart-5986.jpg"
+      ];
+
+      var names = [
+        "Rajesh Salecha",
+        "Amita Salecha",
+        "Rahil Salecha",
+        "Swasti Salecha"
+      ];
+      
+      var j = 0;
+      var i = 0;
+      function nextslide() { 
+       
+         if(i == 4)
+           {
+             i=0;
+           }
+         
+           document.getElementById("album").src = images[i];
+           document.getElementById("name").innerHTML = names[i];
+        i++;
+ /*      if(j == 4)
+         {
+           j=0;
+         
+      j++;*/
+      }
+      </script>
+      <style>
+        #album{
+          height: 150px;
+         width: 150px;
+        }
+        body{
+          text-align: center;
+        }
+      </style>
+  </body>
+</html>
